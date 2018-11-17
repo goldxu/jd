@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var egg =prompt('请输入你的鸡蛋数量');
+        var div = Math.ceil(egg/20);
+        alert("你一共有"+egg+"个鸡蛋"+"需要"+div+"个盒子");
+
+
+        //1.用户输入鸡蛋数
+//        var egg = prompt('请输入鸡蛋数');
+        //2.根据用户输入的鸡蛋数计算盒子数量
+        /*
+         1个鸡蛋   1个盒子   1/20 = 0.05    1个盒子
+         20个鸡蛋   1个盒子  20/20 = 1    1个盒子
+         22个鸡蛋  2个盒子  22/20 = 1.1  2个盒子
+
+         需要的盒子数 =   Math.ceil( 鸡蛋数/20)
+         */
+//        var div = Math.ceil( egg/20);
+//        alert('您输入的鸡蛋数是' + egg + '需要' + div + '个盒子');
+
+//        var people =prompt('请输入你的人数');
+//        var line = Math.ceil(people/10);
+
+
+        说出下面程序的值
+        var a = 12;
+        var b = 10;
+        var c = 5;
+        var d = a++;  a=13
+        var e = ++b;  e=11   b=11
+        var f = c + d++;    f=5+12=17  d=13
+        var g = c + ++d;   g=5+14=19
+        算出d,e,f,g的值
+
+        && || !
+        alert(true&&true);   true
+        alert(true||true);   true
+        alert(!true);        false
+        alert(true&&false);  false
+        alert(false||true);  true
+        alert(false||false); false
+        alert(true&&false);  false
+        alert(1>2|| 1>3);    false
+        alert(1>2&& 1>3);    false
+        alert(1<2|| 1>3);    true
+        alert(1<2&&1>3);     false
+
+
+       请直接说出下面的结果
+       typeof(1)   数值  1
+        typeof(-1)   数值 -1
+       typeof(-1.1)    数值 -1.1
+       typeof(11)     数值  11
+        typeof("111")  字符串  111
+        typeof("")     字符串
+       typeof("  ")    字符串
+        typeof("abc")   字符串  abc
+       var a = 1; typeof(a);  数值  1
+       var a = 1; var b = 0 ;alert(a+b);  数值  1
+       var a = 1 ; var b = "0"; alert(typeof(a+b));
+       var a = 1 ; var b ; alert(typeof(a+b) );
+       var a = 1 ; var b ; alert(typeof(b));
+       var a = "1" ; var b = +a; alert(typeof(b));
+       var a = 1 ; var b = 1 + "1"; alert(typeof(b));
+       var a = "a"; alert(typeof(+a));
+       var a = "a"; alert(typeof(!a));
+       var a = "a"; alert(typeof(a+""));
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
