@@ -1,0 +1,133 @@
+@main-color: #de181b;
+@border-color: #cdcdcd;
+@import 'bass.less';
+// 头部
+#header {
+    height: 24px;
+    display: flex;
+    background-color: #f7f7f7;
+    width: 100%;
+    z-index: 999;
+    padding: 0 10px;
+    a { 
+
+        width: 25px;
+        color: #e475c7;
+        text-align: center;
+        font-size: 9px;
+        // i {三角形
+        //     width: 0;
+        //     height: 0;
+        //     border-left: 5px solid transparent;
+        //     border-right: 5px solid transparent;
+        //     border-top: 10px solid red;
+        // }
+    }
+    span{
+        flex: 1;
+        text-align: center;
+    }
+    img{
+        height: 14px;
+        width: 12px;
+    }
+}
+
+//轮播图
+#slide {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .swiper-pagination-bullet {
+        background-color: transparent;
+        border: 1px solid #fff;
+        opacity: 1;
+        width: 8px;
+        height: 8px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+}
+
+//导航区域
+
+#nav {
+    padding: 5px 1px;
+    >ul {
+        display: flex;
+        /* 让ul支持换行 */
+        flex-wrap: wrap;
+        >li {
+            width: 33.33%;
+            padding: 2px;
+            >a {
+                display: block;
+                text-align: center;
+                >img {
+                    width: 120px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
+#nav2{
+    background-color: #fff;
+    list-style: none;
+    // padding: 5px;
+    >ul {
+        display: flex;
+        /* 让ul支持换行 */
+        flex-wrap: wrap;
+        >li {
+            width: 25%;
+            padding: 2px;
+            >a {
+                display: block;
+                text-align: center;
+                >img {
+                    width: 120px;
+                    height: 80px;
+                    transform: translateX(-20px);
+                }
+            }
+        }
+    }
+}
+//主体商品区域
+.market {
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px @border-color;
+    }
+    .content {
+        display: flex;
+        >div {
+            flex: 1;
+            >a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+//热门活动区域
+.hot-Activity{
+    margin-top: 5px;
+    span{
+        margin-left: 15px;
+    }
+    ul{
+        li{
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
